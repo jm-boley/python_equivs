@@ -8,7 +8,7 @@
 #include <iterator>
 #include <algorithm>
 
-//namespace PythonicUtils {
+namespace PythonicUtils {
     namespace detail
     {
         template <class F, class Tuple, std::size_t... I>
@@ -55,5 +55,5 @@
 
         return result;
     }
-//}
+}   # PythonicUntils
 #endif
