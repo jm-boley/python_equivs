@@ -11,7 +11,7 @@
 #include <random>
 #include <exception>
 
-#include <iostream>
+namespace PythonicUtils {
 
 template <typename _Rs>
 class GenIter;
@@ -204,5 +204,7 @@ Generator<_Rs> make_generator(std::function<_Rs(bool*)>& func)
 {
     return Generator<_Rs> {func};
 }
+
+}  # PythonicUtils
 
 #endif
