@@ -6,7 +6,7 @@
 #include <type_traits>
 #include <iterator>
 
-//namespace PythonicUtils {
+namespace PythonicUtils {
     template <typename _Func, typename _Range>
     auto pymap(_Func&& func, _Range&& range) {
         using std::begin;
@@ -39,5 +39,5 @@
             range.at(i++) = std::forward<_Func>(func)(*first);
         }
     }
-//}
+}
 #endif
